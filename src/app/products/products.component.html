@@ -1,0 +1,19 @@
+<div class="card p-3 h-100">
+    <ng-content select="[head]"></ng-content>
+<div class="card-body">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 ">
+        <div class="col mt-3" *ngFor="let obj of data">
+            <div class="card text-center mt-3 p-3 h-100">
+                <img src="{{obj.img}}" class="card-img h-100" alt="">
+                <p>{{obj.footer}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="card-footer">
+       <button class="btn btn-warning">See all offers..</button>
+      </div>
+</div>
+
+
+
